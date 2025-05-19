@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 20%;
+  min-width: 188px;
+  margin-top: 2vh;
+}
+
+.header__title {
+  margin: 5vh 0 0;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.header__span {
+  display: block;
+}
+
+.header__subtitle {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.header__image {
+  max-width: 984px;
+}

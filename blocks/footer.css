@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__copyright {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}

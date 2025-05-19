@@ -5,7 +5,6 @@
 }
 
 .header__logo {
-  max-width: 20%;
   min-width: 188px;
   margin-top: 2vh;
 }
@@ -32,4 +31,15 @@
 .header__image {
   width: 100%;
   max-width: 984px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    width: 254px;
+  }
+
+  .header__title {
+    font-size: 75px;
+    line-height: 79px;
+  }
 }

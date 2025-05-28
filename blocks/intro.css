@@ -1,27 +1,27 @@
-.content {
+.intro {
   padding: 0 148px 0;
 }
 
-.content__column {
+.intro__column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 75%;
 }
 
-.content__title {
+.intro__title {
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
 }
 
-.content__quote {
+.intro__quote {
   margin: 0;
   font-size: 24px;
   line-height: 34px;
 }
 
-.content__quote-author {
+.intro__quote-author {
   font-size: 24px;
   line-height: 34px;
   align-self: stretch;
@@ -29,38 +29,43 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .content {
+  /* .content {
+    padding: 0;
+  } */
+
+  .intro {
     padding: 0;
   }
-  .content__column {
+
+  .intro__column {
     margin: 0 auto;
     align-items: center;
     max-width: 95%;
   }
 
-  .content__title {
+  .intro__title {
     font-size: 45px;
     line-height: 49px;
   }
 
-  .content__quote {
+  .intro__quote {
     font-size: 24px;
     line-height: 34px;
   }
 
-  .content__quote-author {
+  .intro__quote-author {
     font-size: 24px;
     line-height: 34px;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .content__title {
+  .intro__title {
     font-size: 32px;
     line-height: 35px;
   }
 
-  .content__quote {
+  .intro__quote {
     font-size: 24px;
     line-height: 30px;
   }

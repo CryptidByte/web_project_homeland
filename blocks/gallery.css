@@ -8,7 +8,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   width: 100%;
-  min-height: 25vh; /* cambiar a unidades relativas*/
+  min-height: 25vh;
 }
 
 .gallery__image {
@@ -16,4 +16,15 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    min-height: 25vh;
+  }
 }

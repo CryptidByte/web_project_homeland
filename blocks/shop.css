@@ -1,17 +1,17 @@
 .shop {
-  padding: 0 148px;
+  padding: 0 5vw;
 }
 
 .shop__item {
   display: grid;
-  gap: 1vw;
+  gap: 3vw;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "title artist"
     "image description"
-    "button .";
-  margin-bottom: 5vh;
+    "button description";
+  margin: 5vh 0;
 }
 
 .shop__title {
@@ -74,7 +74,41 @@
   background: linear-gradient(#0278fe, #003a7b);
   border: none;
   color: white;
-  border-radius: 5%;
+  border-radius: 2%;
   padding: 12px;
   box-shadow: 5px 5px 5px black;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .shop {
+    padding: 0 5vw;
+  }
+
+  .shop__item {
+    gap: 5vw;
+  }
+
+  .shop__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .shop__span {
+    display: inline;
+  }
+
+  .shop__artist-header {
+    font-size: 12px;
+  }
+
+  .shop__artist-name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .shop__description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }

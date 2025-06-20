@@ -11,7 +11,7 @@
   grid-template-areas:
     "title artist"
     "image description"
-    "button .";
+    "button description";
   gap: 30px;
   align-items: start;
 }
@@ -22,6 +22,7 @@
   line-height: 76px;
   font-weight: 900;
   margin: 0;
+  align-self: end;
 }
 
 .places__artist-block {
@@ -56,6 +57,7 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  align-self: center;
 }
 
 .places__image:hover {
@@ -84,4 +86,21 @@
 
 .places__button:hover {
   background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    padding: 0;
+    max-width: 95%;
+  }
+
+  .places__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .places__description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }

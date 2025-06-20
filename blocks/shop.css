@@ -1,5 +1,5 @@
 .shop {
-  padding: 0 10vw;
+  padding: 0 min(10vw, 150px);
 }
 
 .shop__item {
@@ -72,13 +72,20 @@
   grid-area: button;
   max-width: 290px;
   max-height: 50px;
-  background: linear-gradient(#0278fe, #003a7b);
+  background-image: linear-gradient(#0278fe, #003a7b);
   border: none;
   color: white;
   border-radius: 2%;
   padding: 12px;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   font-size: 18px;
+}
+
+.shop__button:hover {
+  background-image: linear-gradient(
+    rgba(2, 120, 254, 0.5),
+    rgba(0, 58, 123, 0.5)
+  );
 }
 
 @media screen and (max-width: 1024px) {

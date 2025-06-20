@@ -26,14 +26,36 @@
   display: block;
 }
 
-.shop__image {
+.shop__wrapper {
   grid-area: image;
-  max-width: 460px;
+  position: relative;
   width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  align-self: flex-end;
+}
+
+.shop__image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-  align-self: flex-end;
+}
+
+.shop__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+}
+
+.shop__wrapper:hover .shop__overlay {
+  opacity: 0.5;
 }
 
 .shop__artist {

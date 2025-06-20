@@ -30,7 +30,7 @@
   grid-area: image;
   position: relative;
   width: 100%;
-  max-width: 460px;
+  /* max-width: 460px; */
   aspect-ratio: 1/1;
   overflow: hidden;
   align-self: flex-end;
@@ -146,5 +146,18 @@
   .shop__description {
     font-size: 16px;
     line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .shop__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "description"
+      "button";
   }
 }

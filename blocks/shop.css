@@ -1,5 +1,5 @@
 .shop {
-  padding: 0 5vw;
+  padding: 0 10vw;
 }
 
 .shop__item {
@@ -10,7 +10,7 @@
   grid-template-areas:
     "title artist"
     "image description"
-    "button description";
+    "button .";
   margin: 5vh 0;
 }
 
@@ -32,7 +32,7 @@
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .shop__artist {
@@ -76,7 +76,7 @@
   color: white;
   border-radius: 2%;
   padding: 12px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   font-size: 18px;
 }
 

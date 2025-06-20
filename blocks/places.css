@@ -104,3 +104,45 @@
     line-height: 1.6;
   }
 }
+
+@media screen and (max-width: 544px) {
+  .places {
+    max-width: 100%;
+  }
+  .places__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "description"
+      "button";
+  }
+
+  .places__title {
+    padding: 0 5%;
+  }
+
+  .places__artist-block {
+    padding: 0 5%;
+  }
+
+  .places__description {
+    padding: 0 5%;
+  }
+
+  .places__image {
+    grid-area: image;
+    max-width: max-content;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    align-self: center;
+  }
+
+  .places__button {
+    margin: 0 auto;
+  }
+}

@@ -33,7 +33,7 @@
   /* max-width: 460px; */
   aspect-ratio: 1/1;
   overflow: hidden;
-  align-self: flex-end;
+  /* align-self: flex-end; */
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 

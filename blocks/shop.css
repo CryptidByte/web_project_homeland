@@ -4,13 +4,13 @@
 
 .shop__item {
   display: grid;
-  gap: 3vw;
+  gap: 2vw;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "title artist"
     "image description"
-    "button .";
+    "button description";
   margin: 5vh 0;
 }
 
@@ -33,6 +33,7 @@
   object-fit: cover;
   aspect-ratio: 1/1;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  align-self: flex-end;
 }
 
 .shop__artist {
